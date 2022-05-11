@@ -5,22 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      #timer {
-        /* position 요소 자기 자신을 기준으로 배치 */
-        position: relative;
-        border: 1px solid black;
-        width: 200px;
-        height: 200px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50px;
-        background-color: rgba(red, green, blue, alpha);
-      }
-    </style>
     <script>
-      let time = 600; // 기준시간
+      let time = 90; // 기준시간
       let min = ""; //분
       let sec = ""; //초
       //setInterval(함수, 시간) : 주기적인 실행
@@ -39,7 +25,11 @@
       }, 1000);
     </script>
   </head>
+  <link rel="stylesheet" href="./Timer.css" />
   <body>
+    <header>
+      <div>타이머</div> 
+    </header>
     <div id="timer"></div>
   </body>
 </html>
