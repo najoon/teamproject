@@ -24,6 +24,7 @@ body {
 }
 header h2 {
   padding: 10px;
+  margin-left: 3px;
 }
 header div:nth-of-type(2) {
   margin-left: auto;
@@ -37,6 +38,39 @@ section:first-of-type {
 section:first-of-type div {
   overflow: hidden;
 }
+.guidecheck {
+  font-weight: 700;
+}
+.blankbutton {
+  background-color: aliceblue;
+  width: 100px;
+  padding: 5px 0;
+  text-align: center;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-left: auto;
+}
+.check1 {
+  background-color: rgb(248, 245, 241);
+  padding-top: 10px;
+  padding-bottom: 16px;
+  padding-left: 5px;
+  padding-right: 3px;
+  line-height: 17px;
+}
+.check1 h4 {
+  font-size: 14px;
+}
+img {
+  margin-top: 13px;
+}
+/*
+#imageletpull {
+  background-image: url(../image/dayHealth/letpulldown.png);
+  background-size: cover;
+  height: 38vh;
+}
+*/
 /* 배경사진만 바뀌도록 하는 방법은 이것으로 계속 사용하면 된다. */
 #wrap {
   background-image: url(../image/bg.jpg);
@@ -55,5 +89,42 @@ section:first-of-type div {
 
 .check1 {
   display: none;
-  margin-top: 18px;
+  margin-top: 7px;
+}
+
+.healthpage {
+  border: 1px solid rgb(247, 245, 241);
+  background-color: rgb(247, 245, 241);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  width: 85vw;
+  margin: 15px;
+  padding: 5px;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: bold;
+}
+.healthpage input {
+  width: 60px;
+  height: 20px;
+}
+footer {
+  margin-left: 30%;
+}
+footer ul {
+  max-width: 50%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 17px;
+}
+footer ul li:hover {
+  background-color: antiquewhite;
+  color: black;
+}
+footer ul li {
+  background-color: rgb(33, 32, 32);
+  padding: 7px;
+  color: rgb(208, 205, 205);
+  border-radius: 3px;
 }
