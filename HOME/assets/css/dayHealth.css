@@ -135,3 +135,6 @@ footer ul li {
   color: rgb(227, 224, 224);
   border-radius: 3px;
 }
+footer a {
+  color: #fff;
+}
