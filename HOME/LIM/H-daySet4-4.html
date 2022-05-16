@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="../assets/css/daySet.css" />
+  <body>
+    <header>
+      <h2>일주일 운동 4일</h2>
+      <select id="play">
+        <option value="day1">day1)가슴,등,어깨</option>
+        <option value="day2">day2)하체 ,팔,코어</option>
+        <option value="day3">day3) 가슴,등,어깨</option>
+        <option value="day4" selected="selected">day4) 하체,팔,코어</option>
+      </select>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const play_select = document.querySelector("select#play");
+          if (play_select) {
+            console.log(play_select);
+
+            play_select.addEventListener("change", () => {
+              const value = play_select.value;
+              console.log(value);
+              console.log(value);
+              if (value === "day1") {
+                document.location.href = "./H-daySet4-1.html";
+              } else if (value === "day2") {
+                document.location.href = "./H-daySet4-2.html";
+              } else if (value === "day3") {
+                document.location.href = "./H-daySet4-3.html";
+              } else if (value === "day4") {
+                document.location.href = "./H-daySet4-4.html";
+              }
+            });
+          }
+        });
+      </script>
+    </header>
+    <section>
+      <table>
+        <tr>
+          <th>종목</th>
+          <th>세트</th>
+          <th>무게</th>
+          <th>횟수</th>
+        </tr>
+        <tr>
+          <td>바벨 슈러그</td>
+          <td>3set</td>
+          <td>70Kg</td>
+          <td>12~15회</td>
+        </tr>
+        <tr>
+          <td>레그 프레스</td>
+          <td>4set</td>
+          <td>100kg</td>
+          <td>10~12회</td>
+        </tr>
+        <tr>
+          <td>스모 데드리프트</td>
+          <td>3set</td>
+          <td>100kg</td>
+          <td>10~12회</td>
+        </tr>
+        <tr>
+          <td>레그 컬</td>
+          <td>4set</td>
+          <td>40kg</td>
+          <td>10~12회</td>
+        </tr>
+        <tr>
+          <td>케이블 바이셉컬(이두)</td>
+          <td>3set</td>
+          <td>20kg</td>
+          <td>12~14회</td>
+        </tr>
+        <tr>
+          <td>케이블 트라이셉스 푸쉬다운</td>
+          <td>3set</td>
+          <td>40kg</td>
+          <td>12~14회</td>
+        </tr>
+        <tr>
+          <td>이지바 바이셉 컬 (이두)</td>
+          <td>3set</td>
+          <td>20kg</td>
+          <td>10~12회</td>
+        </tr>
+        <tr>
+          <td>레그 레이즈</td>
+          <td>5set</td>
+          <td></td>
+          <td>12~14회</td>
+        </tr>
+      </table>
+
+      <div>
+        <h2>*운동시 주의 사항*</h2>
+        <br />
+        <ul>
+          <li>
+            운동에 적용된 무게는 회원님의 수준에 맞게 무게를 변경해 주시면
+            됩니다.
+          </li>
+          <li>
+            무게와 횟수계산 -덤벨 운동은 한개 무게에요 -바벨 운동은 봉
+            무게(20Kg)포함합니다.
+          </li>
+          -스미스머신은 봉 무게(20Kg)를 포함하지 않습니다.
+          <br />
+          -한손 운동은 양쪽을 해야 1회입니다.
+        </ul>
+      </div>
+    </section>
+
+    <footer class="team">
+      <a href="../calender.html">이전</a> <a href="../dayHealth01.html">다음</a>
+    </footer>
+  </body>
+</html>
