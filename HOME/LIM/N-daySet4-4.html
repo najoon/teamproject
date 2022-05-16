@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="../assets/css/daySet.css" />
+  <body>
+    <header>
+      <h2>일주일 운동 4일</h2>
+      <select id="play">
+        <option value="day1" selected="selected">day1)가슴,등,이두</option>
+        <option value="day2">day2)하체 ,어깨,삼두,코어</option>
+        <option value="day3">day3) 가슴,등,이두</option>
+        <option value="day4">day4) 하체,어깨,삼두,코어</option>
+      </select>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const play_select = document.querySelector("select#play");
+          if (play_select) {
+            console.log(play_select);
+
+            play_select.addEventListener("change", () => {
+              const value = play_select.value;
+              console.log(value);
+              console.log(value);
+              if (value === "day1") {
+                document.location.href = "./N-daySet4-1.html";
+              } else if (value === "day2") {
+                document.location.href = "./N-daySet4-2.html";
+              } else if (value === "day3") {
+                document.location.href = "./N-daySet4-3.html";
+              } else if (value === "day4") {
+                document.location.href = "./N-daySet4-4.html";
+              }
+            });
+          }
+        });
+      </script>
+    </header>
+    <section>
+      <table>
+        <tr>
+          <th>종목</th>
+          <th>세트</th>
+          <th>무게</th>
+          <th>횟수</th>
+        </tr>
+        <tr>
+          <td>스모 데드리프트</td>
+          <td>4set</td>
+          <td>60Kg</td>
+          <td>10회</td>
+        </tr>
+        <tr>
+          <td>고블릿 스쿼트</td>
+          <td>4set</td>
+          <td>15kg</td>
+          <td>12회</td>
+        </tr>
+        <tr>
+          <td>원 레그 덤벨 데드리프트</td>
+          <td>4set</td>
+          <td>20kg</td>
+          <td>10회</td>
+        </tr>
+        <tr>
+          <td>원암 덤벨 숄더프레스(어깨)</td>
+          <td>4set</td>
+          <td>14kg</td>
+          <td>12회</td>
+        </tr>
+        <tr>
+          <td>페이스 풀(어깨)</td>
+          <td>4set</td>
+          <td>20kg</td>
+          <td>10회</td>
+        </tr>
+        <tr>
+          <td>바벨 프론트 레이즈(어깨)</td>
+          <td>4set</td>
+          <td>15kg</td>
+          <td>12회</td>
+        </tr>
+        <tr>
+          <td>라잉 트라이셉스 익스텐션(삼두)</td>
+          <td>4set</td>
+          <td>20kg</td>
+          <td>12회</td>
+        </tr>
+        <tr>
+          <td>캡 틴스 체어 레그 레이즈(코어)</td>
+          <td>4set</td>
+          <td></td>
+          <td>10회</td>
+        </tr>
+      </table>
+
+      <h3>*운동시 주의 사항 입력*</h3>
+    </section>
+
+    <footer class="team">
+      <a href="./calender.html">이전</a> <a href="dayHealth01.html">다음</a>
+    </footer>
+  </body>
+</html>
