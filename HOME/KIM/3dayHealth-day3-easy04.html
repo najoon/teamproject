@@ -9,6 +9,22 @@
     <style>
       
     </style>
+    <script type="text/javascript">
+
+        const button_click = (e) =>{
+            window.open("../timer/timer.html", "타이머", "width=500px,height=550px")
+            e.target.style.backgroundColor = "rgb(56, 56, 164)"
+            console.log(e.target)
+        }
+
+        document.addEventListener("DOMContentLoaded",()=>{
+            const buttons = document.querySelectorAll("input.alerts")
+            for(let i = 0 ; i < buttons.length ; i++) {
+                buttons[i].addEventListener("click",button_click)
+            }
+        })
+
+    </script>
   </head>
   <body>
     <div id="wrap">
@@ -49,8 +65,7 @@
                 <div>kg</div>
                 <input type="text" name="numbers" placeholder="10" />
                 <div>회</div>
-                <input type='button' value='체크' class="checks"
-                onclick='window.open("../Timer/Timer.html","join","width=500px, height=550px")'>
+                <input type="button" value="체크"  class="alerts">
             </div>
             <div class="healthpage">
                 <div>2 set )</div>
@@ -58,8 +73,7 @@
                 <div>kg</div>
                 <input type="text" name="numbers" placeholder="10" />
                 <div>회</div>
-                <input type='button' value='체크' class="checks"
-                onclick='window.open("../Timer/Timer.html","join","width=500px, height=550px")'>
+                <input type="button" value="체크"  class="alerts">
 
             </div>
             <div class="healthpage">
@@ -68,8 +82,7 @@
                 <div>kg</div>
                 <input type="text" name="numbers" placeholder="10" />
                 <div>회</div>
-                <input type='button' value='체크' class="checks"
-                onclick='window.open("../Timer/Timer.html","join","width=500px, height=550px")'>
+                <input type="button" value="체크"  class="alerts">
 
             </div>
             <div class="healthpage">
@@ -78,8 +91,7 @@
                 <div>kg</div>
                 <input type="text" name="numbers" placeholder="10" />
                 <div>회</div>
-                <input type='button' value='체크' class="checks"
-                onclick='window.open("../Timer/Timer.html","join","width=500px, height=550px")'>
+                <input type="button" value="체크"  class="alerts">
 
             </div>
         </div>

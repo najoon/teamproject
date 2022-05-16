@@ -123,6 +123,9 @@ section div h4 {
   border-collapse: collapse;
   font-size: smaller;
 }
+.alerts:focus {
+  background-color: rgb(56, 56, 164);
+}
 /*footer {
   margin-top: 30px;
   margin-left: 30%;
@@ -136,7 +139,7 @@ footer ul {
   margin-top: 70px;
 }
 footer ul li:hover {
-  background-color: rgb(120, 86, 168);
+  background-color: rgb(56, 56, 164);
   border: 1px solid rgba(80, 80, 80, 0.5);
   color: #ddd;
 }
