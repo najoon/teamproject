@@ -59,8 +59,9 @@ footer {
 table {
   border-collapse: collapse;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  font-size: 5px;
+  font-size: 0.8em;
   text-align: left;
+  table-layout: fixed;
 }
 
 th,
