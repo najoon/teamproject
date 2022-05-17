@@ -28,7 +28,7 @@ select {
   width: 35vh;
   height: 30px;
   font-size: 2vh;
-  margin-top: 50px;
+  margin-top: 30px;
   background-image: url(../image/bg.jpg);
   color: black;
 }
@@ -59,7 +59,7 @@ footer {
 table {
   border-collapse: collapse;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  font-size: 0.8em;
+  font-size: 80%;
   text-align: left;
   table-layout: fixed;
 }
