@@ -20,7 +20,15 @@
     <title>Dagym</title>
   </head>
   <link rel="stylesheet" href="assets/css/calender.css" />
-
+  <style>
+    form div {
+      border: 2px solid rgb(221, 222, 223);
+      margin: 20px auto;
+      padding: 6px;
+      border-radius: 10px;
+      font-weight: 550;
+    }
+  </style>
   <body>
     <div id="wrap">
       <!-- Header -->
@@ -37,7 +45,7 @@
             action="값을 보낼 주소"
             method="post"
           >
-            <input type="date" name="userBirthday" />
+            <div>2022년 05월 20일</div>
           </form>
           <input id="a-box" type="radio" name="level" />
           <label class="abc-list" for="a-box">초급</label>
